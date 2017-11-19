@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   devise_for :views
   root  'static_pages#home'
   match '/help',    to: 'static_pages#help',    via: 'get'
