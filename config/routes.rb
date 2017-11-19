@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
+=======
+  resources :users, only: [:show]
+>>>>>>> 1c3ed2efa2db5d0e3f26aaf092e42d8a06a88ac1
   devise_for :users
   devise_for :views
   resources :users, only: [:show]
