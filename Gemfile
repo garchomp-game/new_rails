@@ -53,4 +53,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'sqlite3'
 gem 'bootstrap-sass'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'devise'
