@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   }
   devise_for :views
   resources :users, only: [:show, :index, :destroy]
+  resources :microposts, only: [:create, :destroy]
   root  'static_pages#home'
   match '/help',    to: 'static_pages#help',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
