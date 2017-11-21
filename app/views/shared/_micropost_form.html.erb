@@ -3,5 +3,10 @@
   <div class="field">
     <%= f.text_area :content, placeholder: "Compose new micropost..." %>
   </div>
+    <div class="micropost_image_box">
+      <%= f.label :image %>
+    　<%= f.file_field :image %>
+    　<%begin%><%= f.hidden_field :image_cache %><%rescue%><%end%>
+    </div>
   <%= f.submit "Post", class: "btn btn-lg btn-primary" %>
 <% end %>
